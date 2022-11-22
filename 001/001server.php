@@ -15,12 +15,6 @@ echo $_SERVER["REQUEST_METHOD"]. "<br>";
 echo $_SERVER["REQUEST_URI"]. "<br>";
 echo $_SERVER["QUERY_STRING"]. "<br>";
 
-$nombre = $_POST("nombre");
-$apellido = $_POST("apellido");
-$usuario = $_POST("usuario");
-
-echo("Nombre: " . $nombre);
-echo("Apellido: " . $apellido);
-echo("Usuario: " . $usuario);
+echo $_SERVER["HTTP_REFERER"]. "<br>";
 
 ?>
